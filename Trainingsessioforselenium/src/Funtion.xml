@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Regression" parallel="tests" thread-count="6"> 
+	
+<parameter name="uri" value="https://www.facebook.com"></parameter>
+<test name="Login">
+<parameter name="browser" value="Chrome"></parameter>
+<classes> 
+<class name="ProTrainingTech.Trainingsessioforselenium.Signkh"></class>
+<class name="ProTrainingTech.Trainingsessioforselenium.Amazon"></class>
+</classes>
+</test>
+<test name="Loginto">
+<parameter name="browser" value="Edge"></parameter>
+<classes>
+<class name="ProTrainingTech.Trainingsessioforselenium.Signkh"></class>
+<class name="ProTrainingTech.Trainingsessioforselenium.Amazon"></class>
+</classes>
+</test>
+</suite> 

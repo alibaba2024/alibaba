@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="6" parallel="tests" name="Failed suite [Regression]">
+  <parameter name="uri" value="https://www.facebook.com"/>
+  <test thread-count="6" parallel="tests" name="Loginto(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="ProTrainingTech.Trainingsessioforselenium.Signkh">
+        <methods>
+          <include name="f"/>
+          <include name="CreatAcc"/>
+          <include name="afterMethod"/>
+          <include name="Ibrowsers"/>
+        </methods>
+      </class> <!-- ProTrainingTech.Trainingsessioforselenium.Signkh -->
+      <class name="ProTrainingTech.Trainingsessioforselenium.Amazon">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="f"/>
+          <include name="Ibrowsers"/>
+        </methods>
+      </class> <!-- ProTrainingTech.Trainingsessioforselenium.Amazon -->
+    </classes>
+  </test> <!-- Loginto(failed) -->
+  <test thread-count="6" parallel="tests" name="Login(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="ProTrainingTech.Trainingsessioforselenium.Signkh">
+        <methods>
+          <include name="f"/>
+          <include name="afterMethod"/>
+          <include name="Ibrowsers"/>
+        </methods>
+      </class> <!-- ProTrainingTech.Trainingsessioforselenium.Signkh -->
+      <class name="ProTrainingTech.Trainingsessioforselenium.Amazon">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="f"/>
+          <include name="Ibrowsers"/>
+        </methods>
+      </class> <!-- ProTrainingTech.Trainingsessioforselenium.Amazon -->
+    </classes>
+  </test> <!-- Login(failed) -->
+</suite> <!-- Failed suite [Regression] -->
